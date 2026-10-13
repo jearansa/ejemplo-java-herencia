@@ -39,4 +39,12 @@ public class EmplDistr extends Asal{
 	public double getSalario (){
 		return super.getSalario () * (1 + 0.10);
 	}
+
+	// Otro ejemplo de redefinición, atención porque este método "viene" de Object,
+	// está redefinido en "Asal", y ahora también está redefinido aquí:
+	public String toString (){
+		String aux = super.toString();
+		aux = aux + "La región es " + this.getRegion() + "\n";
+		return aux;
+	}
 }

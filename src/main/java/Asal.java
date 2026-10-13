@@ -30,4 +30,14 @@ public class Asal{
 	public double getSalario (){
 		return this.salarioBase;
 	}
+
+	// Atención: el método toString pertenece a la clase "Object",
+	// aquí lo estamos redefiniendo para objetos de tipo "Asal"
+	public String toString (){
+		String aux = new String();
+		aux = aux + "El nombre es " + this.getNombre() + "\n";
+		aux = aux + "El DNI es " + this.getDni() + "\n";
+		aux = aux + "El salario es " + this.getSalario() + "\n";
+		return aux;
+	}
 }

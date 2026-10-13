@@ -22,4 +22,11 @@ public class EmplProd extends Asal{
 	public double getSalario (){
 		return super.getSalario () * (1 + 0.15);
 	}
+
+	public String toString (){
+		String aux = super.toString();
+		aux = aux + "La región es " + this.getTurno() + "\n";
+		return aux;
+	}
+
 }
